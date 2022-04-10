@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background: #FAFAFA;
+    color: white;
+    font-size: 12x;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 80px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 5fr;
+    grid-template-rows: 0px 150px 1fr 25px; 
+    grid-template-areas:"nav nav"
+                        "header header"
+                        "sidebar main"
+                        "footer footer";
+}
+.nav-class{
+    background: #004D40;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-class h1{
+    color:#000;
+}
+.nav-ul{
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-ul li{
+    margin-left: 10px;
+}
+.nav-ul a{
+    text-decoration: none; 
+    color: #FFF;
+}
+.nav-ul a:hover{
+    color: burlywood;
+}
+.header-class{
+    background-image: url(/images/lib.PNG);
+    color: white;
+    padding: 0 15px;
+    grid-area: header;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-class{
+    background: #E0F2F1;
+    color: black;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    grid-area: main;
+    display: flex;
+    border-radius: 15px;
+    border: #00796B 2px solid;
+}
+.main-class .main{
+    width: 70%;
+    margin: auto;
+    
+}
+.aside-class{
+    background: #E0F2F1;
+    color: #000;
+    padding: 14px 15px;
+    grid-area: sidebar;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: #00796B px solid;
+}
+.login{
+    font-size: 14px;
+}
+.aside-class ul{
+    list-style: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.aside-class ul a{
+    color: #00796B;
+}
+.aside-class .account ul a{
+    text-decoration: underline;
+}
+.aside-class ul a:hover{
+    text-decoration:underline;
+    color:#004D40;
+    font-weight:bold;
+}
+.footer-class{
+    background:#4DB6AC;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
